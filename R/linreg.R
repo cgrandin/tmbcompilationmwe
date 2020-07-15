@@ -1,6 +1,7 @@
 #' Run a linear regression example using TMB
 #'
 #' @return Nothing
+#' @importFrom TMB MakeADFun
 #' @export
 run_linreg <- function(seed = 123){
   set.seed(seed)
@@ -8,6 +9,7 @@ run_linreg <- function(seed = 123){
   parameters <- list(a = 0, b = 0, logSigma = 0)
   obj <- MakeADFun(data, parameters, DLL = "linreg")
   obj$hessian <- TRUE
+  obj$env$tracemgc <- FALSE
   opt <- do.call("optim", obj)
   opt
   opt$hessian ## <-- FD hessian from optim
