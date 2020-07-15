@@ -1,2 +1,2 @@
-# tmbcompilationmwe
-Minimum working example of TMB compilation and registration from within a package
+# tmb_compilation_mwe
+A minimal working example of how to compile and register TMB code properly in a package

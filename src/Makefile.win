@@ -1,0 +1,8 @@
+all: linreg.dll
+
+linreg.dll: linreg.cpp
+	Rscript --vanilla -e "TMB::compile('linreg.cpp', '-O1 -g', safebounds = FALSE, safeunload = FALSE, DLLFLAGS = '')"
+
+clean:
+	rm -rf *.o
+	rm -rf *.dll

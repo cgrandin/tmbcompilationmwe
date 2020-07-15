@@ -1,0 +1,23 @@
+Package: tmbcompilationmwe
+Title: Minimum Working Example of TMB Compilation and Registration From Within a Package
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Chris",
+           family = "Grandin",
+           role = c("aut", "cre"),
+           email = "chris.grandin@gmail.com")
+Description: A simple example of compilation of TMB source code upon loading of the package as opposed to frequent calls to TMB::compile() from within code.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+LinkingTo: 
+    TMB
+Imports:
+    TMB
+Suggests: 
+    testthat
+BinaryFiles:
+    src/linreg.dll
+
