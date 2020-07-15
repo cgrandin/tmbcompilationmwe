@@ -1,7 +1,7 @@
 #' Load the dynamic library when the package is loaded
 #'
 #' @details If running [devtools::check()], be sure to call it as: `devtools::check(cran = FALSE)`
-#' to avoid a major error about the DLL not being able to be found
+#' to avoid an error about the DLL not being able to be found
 #'
 #' @param lib The name of the dynamic link library
 #' @param pkg The package name

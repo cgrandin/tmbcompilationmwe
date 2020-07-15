@@ -1,7 +1,10 @@
 #' Run a linear regression example using TMB
 #'
+#' @param seed See [set.seed()]
+#'
 #' @return Nothing
 #' @importFrom TMB MakeADFun
+#' @importFrom stats rnorm
 #' @export
 run_linreg <- function(seed = 123){
   set.seed(seed)

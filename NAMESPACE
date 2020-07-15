@@ -2,3 +2,4 @@
 
 export(run_linreg)
 importFrom(TMB,MakeADFun)
+importFrom(stats,rnorm)

@@ -6,6 +6,9 @@
 \usage{
 run_linreg(seed = 123)
 }
+\arguments{
+\item{seed}{See \code{\link[=set.seed]{set.seed()}}}
+}
 \value{
 Nothing
 }

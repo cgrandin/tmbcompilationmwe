@@ -4,6 +4,6 @@
 #'
 #' @return Nothing
 .onUnload <- function(libpath){
-  message("Unloading runHakeassessment dynamic link (shared object) library...")
-  try(library.dynam.unload("runHakeassessment", libpath), silent = TRUE)
+  message("Unloading linreg dynamic link (shared object) library...")
+  try(library.dynam.unload("linreg", libpath), silent = TRUE)
 }

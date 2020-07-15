@@ -1,2 +1,6 @@
 ^tmb_compilation_mwe\.Rproj$
 ^\.Rproj\.user$
+^.o$
+^.dll$
+^.travis.yml$
+^codecov.yml$
