@@ -14,12 +14,14 @@
   is_ci <- Sys.getenv("CI") != ""
   if(is_travis || is_ci){
     library.dynam("linreg", package = pkg, lib.loc = lib)
+    library.dynam("minimal", package = pkg, lib.loc = lib)
   }else{
     library.dynam("linreg", package = pkg, lib.loc = .libPaths())
+    library.dynam("minimal", package = pkg, lib.loc = .libPaths())
   }
 }
 
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("Loading linreg dynamic link (shared object) library...\n",
-                        "Pass DLL = 'linreg' to all 'MakeADFun()' calls.")
+  packageStartupMessage("Loading linreg and minimal dynamic link (shared object) libraries...\n",
+                        "Use arguments DLL = 'linreg' or DLL = 'minimal' to 'MakeADFun()' calls.")
 }

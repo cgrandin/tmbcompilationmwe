@@ -1,5 +1,5 @@
 Package: tmbcompilationmwe
-Title: Minimum Working Example of TMB Compilation and Registration From Within a Package
+Title: Minimum Working Example of TMB Compilation of Multiple C++ Source Files From Within a Package
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Chris",
@@ -20,5 +20,6 @@ Imports:
 Suggests: 
     testthat
 BinaryFiles:
-    src/linreg.dll
+    src/linreg.dll,
+    src/minimal.dll
 
